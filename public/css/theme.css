@@ -1,0 +1,90 @@
+.dark-theme {
+    --bg-color: black;
+    --color-tx: white;
+    --border-color: white;
+    --layout-border: rgba(194, 194, 194, 0.739);
+    --main-title: rgba(243, 243, 243, 0.204);
+    --form-bg: #1d1d1d;
+    --bx-shadow: rgba(255, 255, 255, 0.17);
+    --close-btn: rgb(255, 255, 255);
+    --button-color: #b1b1b1;
+    --footer-color-text: black;
+    --footer-button-color: #ffffff;
+    --lang-card-color-tx: white;
+    --lang-card-bg: rgb(77, 77, 77);
+}   
+.light-theme {
+    --bg-color: rgb(255, 255, 255);
+    --color-tx: black;
+    --border-color: rgb(200, 200, 200);
+    --layout-border: rgba(194, 194, 194, 0.739);
+    --main-title: rgba(96, 96, 96, 0.462);
+    --form-bg: #dcdcdc;
+    --bx-shadow: rgba(0, 0, 0, 0.29);
+    --close-btn: rgb(255, 255, 255);
+    --button-color: #141414;
+    --footer-button-color: #7b7b7b;
+    --lang-card-color-tx: black;
+    --lang-card-bg: rgb(138, 138, 138);
+}
+.orange-theme {
+    --bg-color: rgb(255, 197, 126);
+    --color-tx: rgb(255, 115, 0);
+    --border-color: rgb(255, 102, 0);
+    --layout-border: rgba(255, 128, 10, 0.739);
+    --main-title: rgba(255, 145, 0, 0.369);
+    --form-bg: #ffa874;
+    --bx-shadow: rgba(255, 96, 0, 0.58);
+    --close-btn: rgb(255, 98, 0);
+    --button-color: #ff6000;
+    --lang-card-color-tx: rgb(255, 55, 0);
+    --lang-card-bg: rgb(236, 137, 50);
+}
+
+.gray-theme {
+    --bg-color: rgb(45, 45, 45);
+    --color-tx: white;
+    --tx-stroke: rgba(128, 128, 128, 0.472);
+    --border-color: rgb(237, 237, 237);
+    --layout-border: rgba(255, 255, 255, 0.372);
+    --main-title: rgba(142, 142, 142, 0.33);
+    --form-bg: #1d1d1d;
+    --bx-shadow: rgba(255, 255, 255, 0.17);
+    --close-btn: rgb(181, 181, 181);
+    --button-color: #2a2a2a;
+    --lang-card-color-tx: rgb(44, 44, 44);
+    --lang-card-bg: rgb(211, 211, 211);
+}
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--color-tx) !important;
+
+}
+.change-block {
+    top: 57px;
+    right: 22px;
+    z-index: 99;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .3s linear;
+    display: inline-block;
+    height: auto;
+    background-color: var(--bg-color);
+    color: var(--color-tx);
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    padding: 10px;
+}
+
+.visible {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: all .3s linear;
+}
+.theme-button {
+    cursor: pointer;
+}

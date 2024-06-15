@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/slider.css">
+        <link rel="stylesheet" href="/css/theme.css">
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <title>Document</title>
+    </head>
+    <body class="gray-theme">
+        <div class="layout">
+            <div class="register-modal">
+                <h2>Регистрация</h2>
+                <div class="inner-register-modal">
+                    <div class="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V7h16l.001 12H4z"></path><path d="m15.707 10.707-1.414-1.414L12 11.586 9.707 9.293l-1.414 1.414L10.586 13l-2.293 2.293 1.414 1.414L12 14.414l2.293 2.293 1.414-1.414L13.414 13z"></path></svg>
+                    </div>
+                    <form class="modal-form">
+                        <p>Имя</p>
+                        <input type="text" name="name">
+                        <p>Почта</p>
+                        <input type="email" name="email">
+                        <p>Пароль</p>
+                        <input type="password" name="password">
+                        <button type="submit">Зарегистрироваться</button>
+
+                    </form>
+                </div>
+            </div>
+             <div class="change-block">
+                <div class="theme-button" data-theme='light'>Светлая тема</div>
+                <div class="theme-button" data-theme='dark'>Темная тема</div>
+                <div class="theme-button" data-theme='orange'>Оранжевая тема</div>
+                <div class="theme-button" data-theme='gray'>Серая тема</div>
+            </div>
+            <header>
+                <div class="header-logo"> 
+                    <a href="/">
+                    CodeTypes
+                    </a>
+                </div>
+                <div class="header-buttons">
+                    <button class="auth">Войти</button>
+                    <button class="register">Зарегистрироваться</button>
+                    <button class="change-button">
+                        <div class="light-block">Смена темы</div>
+                    </button>
+                </div>
+            </header>
+            <aside>
+                <ul>
+                    <li class="aside-active">
+                        <a href="/keyboard">
+                            Начать тренировку
+                        </a>
+                    </li>
+                    <li  class="">
+                        <a href="/about">
+                            Проект
+                        </a>
+                    </li>
+                    <li  class="">
+                        <a href="/contact">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="aside-social">
+                    <a href=""><box-icon type='logo' name='discord'></box-icon></a>
+                    <a href=""><box-icon name='telegram' type='logo' ></box-icon></a>
+                    <a href=""><box-icon name='youtube' type='logo' ></box-icon></a>
+                    <a href=""><box-icon name='vk' type='logo' ></box-icon></a>
+                </div>
+            </aside>
+            <main>
+                {{{body}}}
+            </main>
+        </div>
+        <script src="/js/register.js"></script>
+        <script src="/js/modal.js"></script>
+        <script src="/js/slider.js"></script>
+        <script src="/js/theme.js"></script>
+    </body>
+    </html>
+
+  
